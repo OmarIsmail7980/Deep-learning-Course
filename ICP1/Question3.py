@@ -5,5 +5,5 @@ input = input("Please write a sentence:")
 #replace the words
 result = input.replace("python", "pythons")
 
-print(result)
+print('\n',result)
 
