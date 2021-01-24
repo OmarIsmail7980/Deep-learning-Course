@@ -1,0 +1,4 @@
+State differences between Python 2 and Python 3 version.
+•	In Python 2 the print statement does not have parenthesis, while in python 3 it has parentheses.
+•	Unlike python 3, python 2 doesn’t automatically convert the division of integers to float.
+•	Xrange can be used python 2 but it doesn’t exist in python 3
