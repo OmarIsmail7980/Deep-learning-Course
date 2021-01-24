@@ -1,9 +1,9 @@
 
 # PART 1
-p = input("welcome, please enter a string:")
+string = input("welcome, please enter a string:")
 
 # remove 2 characters of the string
-result = p[:-2]
+result = string[:-2]
 
 #print the reversed string
 print("The result is: ",result[::-1])
