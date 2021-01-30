@@ -1,20 +1,28 @@
 #open the file
-infile = open('file.txt', 'r')
+infile = open('file1.txt', 'r')
 
-line = infile.readline()
+#replace endline with space
+line = infile.readline().replace("\n","")
 
-count = 0
+
+dic = {}
 
 while line!="":
     #read words in line
-    for xstr in line.split():
-        count = count+1
-        #print word with it's count
-        print(xstr,count,'\n')
-         
-    #set the count for next line
-    count = 0
-    #read the following line
-    line= infile.readline()
+    for xstr in line.split(" "):
+        if xstr in dic.keys():
+            dic[xstr] = dic[xstr]+1
+        else:
+            dic[xstr]=1
+    line = infile.readline().replace("\n","") 
+    
+
+       
+outfile = open('file.txt', 'w')
+
+for i in dic.keys():
+    outfile.write(i+str(dic[i])+"\n")
+    
+    
     
     
