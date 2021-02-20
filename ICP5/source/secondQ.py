@@ -25,7 +25,7 @@ print(reg.score(x_test,y_test))
 
 #check correlation against target
 for i in data.columns: 
-    print(data[[i,'revenue']].corr(),'\n')
+    print(data[[i,'revenue']].corr())
 
 new_df = data[['City Group','P2','P6','P28','P29','revenue']]
 y2=new_df['revenue']
