@@ -8,6 +8,8 @@ raw_data = pd.read_csv("ResturantRev.csv")
 raw_data = raw_data.drop("Id", axis=1)
 from sklearn.preprocessing import LabelEncoder
 data = raw_data.copy()
+
+#encode features
 data['City Group']= LabelEncoder().fit_transform(data['City Group'])
 data['Type']= LabelEncoder().fit_transform(data['Type'])
 
@@ -36,6 +38,8 @@ pred2 = reg.predict(x_test2)
 
 print(mean_squared_error(y_test2,pred))
 print(reg.score(x_test2,y_test2))
+
+#The accuracy is not better even though the highest correlated features we included
 
 
 

@@ -35,4 +35,5 @@ plt.scatter(df3['GarageArea'], df3['SalePrice'])
 
 
 
+
     
